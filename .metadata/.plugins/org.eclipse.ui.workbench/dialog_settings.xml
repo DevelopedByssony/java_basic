@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ImportExportAction">
+		<item key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID" value="org.eclipse.ui.wizards.import.ZipFile"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+	</section>
+	<section name="ZipFileImportWizard">
+		<item key="WizardZipFileResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="false"/>
+		<list key="WizardZipFileResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\소윤희\Dropbox\국비 교육\빅데이터\20220119.zip"/>
+			<item value="D:\20220110.zip"/>
+			<item value="D:\20220105.zip"/>
+			<item value="C:\Users\소윤희\Dropbox\국가지원\빅데이터\210104(강사).zip"/>
+			<item value="C:\Users\소윤희\Dropbox\국가지원\빅데이터\210103(강사).zip"/>
+		</list>
+	</section>
+</section>

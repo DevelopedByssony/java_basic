@@ -1,0 +1,9 @@
+package static1;
+
+public class Main02P276 {
+    public static void main(String[] args) {
+    	StaticTest s1 = new Statictest();
+    	
+	}
+
+}

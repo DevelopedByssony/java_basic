@@ -1,0 +1,13 @@
+package static1;
+
+public class Main02P276 {
+    public static void main(String[] args) {
+    	// Static 변수는 생성 없이도 활용할 수 있다.
+    	System.out.println(StaticTest.num2);
+    	// out.println(StaticTest.num1); -> num1은 X
+    	StaticTest.check();
+    	// StaticTest s1 = new StaticTest();
+    	
+	}
+
+}
