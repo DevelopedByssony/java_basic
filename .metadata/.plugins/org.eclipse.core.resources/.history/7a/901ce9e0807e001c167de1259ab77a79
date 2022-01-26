@@ -1,8 +1,0 @@
-package static1;
-
-public class Main02 {
-    public static void main(String[] args) {
-    	
-	}
-
-}
