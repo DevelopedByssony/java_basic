@@ -3,8 +3,7 @@ package exception2;
 import java.util.Scanner;
 
 public class IfElse01 {
-
-	public static void main(String[] args) {
+	   public static void main(String[] args) {
 		// int a, b에 스캐너로 각각 정수를 입력받아주세요.
 		Scanner scan = new Scanner(System.in);
 		System.out.println("1번 정수를 입력해주세요.");
