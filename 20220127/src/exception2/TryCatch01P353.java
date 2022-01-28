@@ -29,7 +29,12 @@ public class TryCatch01P353 {
 			System.out.println("나누는 숫자는 0이 될 수 없습니다.");
 		} finally {
 			// 모든 try~catch 영역의 로직이 끝나고 나서 실행할 코드
+			// finally 구문이 실행되지 않는 경우
+			// 1. finally 구문 이전에 System.exit() 구문을 호출했을 시
+			// 2. 컴퓨터가 꺼져서 시스템이 멈추었을 시
+			// 3. finally 블록 내부에서 예외가 발생했을 시
 			System.out.println("코드 끝!");
 		}
 	}
+}
 
