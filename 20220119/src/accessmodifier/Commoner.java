@@ -1,17 +1,17 @@
 package accessmodifier;
 
 public class Commoner {
-	// private ìš”ì†ŒëŠ” ìì‹ìª½ì—ì„œë„ ì¡°íšŒë‚˜ ìˆ˜ì •ì´ ë¶ˆê°€ëŠ¥í•©ë‹ˆë‹¤.
-	// ë³´ì•ˆì„±ì´ ì œì¼ ë›°ì–´ë‚˜ê¸° ë•Œë¬¸ì— privateì„ ì“°ëŠ”ê²Œ ê¶Œì¥ë˜ëŠ”ë°
-	// ì´ ê²½ìš° setter, getterë¼ëŠ” ë©”ì„œë“œë“¤ì„ ì´ìš©í•´ ë³´ì¡°í•©ë‹ˆë‹¤.
+	// private ¿ä¼Ò´Â ÀÚ½ÄÂÊ¿¡¼­µµ Á¶È¸³ª ¼öÁ¤ÀÌ ºÒ°¡´ÉÇÕ´Ï´Ù.
+	// º¸¾È¼ºÀÌ Á¦ÀÏ ¶Ù¾î³ª±â ¶§¹®¿¡ privateÀ» ¾²´Â°Ô ±ÇÀåµÇ´Âµ¥
+	// ÀÌ °æ¿ì setter, getter¶ó´Â ¸Ş¼­µåµéÀ» ÀÌ¿ëÇØ º¸Á¶ÇÕ´Ï´Ù.
 	private int hp;
 	private int mp;
 	private int lv;
 	private int exp;
 	private String name;
 	
-	// ìƒì„±ìë¥¼ ì´ìš©í•´ ì´ë¦„ì€ ì‚¬ìš©ìê°€ ì…ë ¥í•˜ë„ë¡ í•´ ì£¼ì‹œê³ 
-	// hpëŠ” 20, mpëŠ” 10, lvëŠ” 1, expëŠ” 0ì„ ê¸°ë³¸ê°’ìœ¼ë¡œ ë„£ì–´ì£¼ì„¸ìš”.
+	// »ı¼ºÀÚ¸¦ ÀÌ¿ëÇØ ÀÌ¸§Àº »ç¿ëÀÚ°¡ ÀÔ·ÂÇÏµµ·Ï ÇØ ÁÖ½Ã°í
+	// hp´Â 20, mp´Â 10, lv´Â 1, exp´Â 0À» ±âº»°ªÀ¸·Î ³Ö¾îÁÖ¼¼¿ä.
 	public Commoner(String name) {
 		this.hp = 20;
 		this.mp = 10;
@@ -19,9 +19,9 @@ public class Commoner {
 		this.exp = 0;
 		this.name = name;
 	}
-	// setter/getterì˜ ê¸°ë³¸í˜•ì„ ë§Œë“œëŠ” ë°©ë²•ì€
-	// ë§ˆìš°ìŠ¤ìš°í´ë¦­ -> source -> generate getters/settersë¥¼ ì„ íƒí•´ ìë™ìœ¼ë¡œ
-	// ìƒì„±í•´ì¤„ ìˆ˜ ìˆìŠµë‹ˆë‹¤.
+	// setter/getterÀÇ ±âº»ÇüÀ» ¸¸µå´Â ¹æ¹ıÀº
+	// ¸¶¿ì½º¿ìÅ¬¸¯ -> source -> generate getters/setters¸¦ ¼±ÅÃÇØ ÀÚµ¿À¸·Î
+	// »ı¼ºÇØÁÙ ¼ö ÀÖ½À´Ï´Ù.
 
 	public int getHp() {
 		return hp;

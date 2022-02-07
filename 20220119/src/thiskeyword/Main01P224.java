@@ -3,12 +3,12 @@ package thiskeyword;
 public class Main01P224 {
 
 	public static void main(String[] args) {
-		// Personì„ í•˜ë‚˜ ë¨¼ì € ìƒì„±í•´ì£¼ì‹œê³ , getInfo()ë¡œ ì¡°íšŒê¹Œì§€ í•´ë³´ì„¸ìš”.
-		Person p1 = new Person("ì±„ì¢…í›ˆ", 20, 3000, "í†µê³„í•™");
+		// PersonÀ» ÇÏ³ª ¸ÕÀú »ı¼ºÇØÁÖ½Ã°í, getInfo()·Î Á¶È¸±îÁö ÇØº¸¼¼¿ä.
+		Person p1 = new Person("Ã¤Á¾ÈÆ", 20, 3000, "Åë°èÇĞ");
 		//p1.getInfo();
 		
-		// Personì„ í•˜ë‚˜ ë” ìƒì„±í•´ì£¼ì‹œê³  getInfo()ë¡œ ì¡°íšŒê¹Œì§€ í•´ë³´ì„¸ìš”.
-		Person p2 = new Person("ê¹€ì´ë°•", 40, 5000, "ìˆ˜í•™");
+		// PersonÀ» ÇÏ³ª ´õ »ı¼ºÇØÁÖ½Ã°í getInfo()·Î Á¶È¸±îÁö ÇØº¸¼¼¿ä.
+		Person p2 = new Person("±èÀÌ¹Ú", 40, 5000, "¼öÇĞ");
 		p2.getInfo();
 	}
 

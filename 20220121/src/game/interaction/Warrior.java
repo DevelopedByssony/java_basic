@@ -1,16 +1,16 @@
 package game.interaction;
 
 public class Warrior {
-	// Warriorì˜ íŠ¹ì„±ìœ¼ë¡œ
-	// ì²´ë ¥(hp), ë§ˆë‚˜(mp), ê³µê²©ë ¥(atk), ê²½í—˜ì¹˜(exp), ë ˆë²¨(lv)ë¥¼ ë„£ì–´ì£¼ì„¸ìš”
+	// WarriorÀÇ Æ¯¼ºÀ¸·Î
+	// Ã¼·Â(hp), ¸¶³ª(mp), °ø°Ý·Â(atk), °æÇèÄ¡(exp), ·¹º§(lv)¸¦ ³Ö¾îÁÖ¼¼¿ä
 	private int hp;
 	private int mp;
 	private int atk;
 	private int exp;
 	private int lv;
 	
-	// ìƒì„±ìžë¥¼ ìƒì„±í•´ì„œ ì•„ë¬´ê²ƒë„ ìž…ë ¥ë°›ì§€ ì•Šê³ 
-	// ì²´ë ¥ì€ 20, ë§ˆë‚˜ëŠ” 10, ê³µê²©ë ¥ì€ 4, ë ˆë²¨ì€ 1, ê²½í—˜ì¹˜ëŠ” 0ì´ ìžë™ìž…ë ¥ë˜ê²Œ í•´ì£¼ì„¸ìš”.
+	// »ý¼ºÀÚ¸¦ »ý¼ºÇØ¼­ ¾Æ¹«°Íµµ ÀÔ·Â¹ÞÁö ¾Ê°í
+	// Ã¼·ÂÀº 20, ¸¶³ª´Â 10, °ø°Ý·ÂÀº 4, ·¹º§Àº 1, °æÇèÄ¡´Â 0ÀÌ ÀÚµ¿ÀÔ·ÂµÇ°Ô ÇØÁÖ¼¼¿ä.
 	public Warrior() {
 		this.hp = 20;
 		this.mp = 10;
@@ -19,36 +19,36 @@ public class Warrior {
 		this.exp = 0;
 	}
 	
-	// ì˜¤í¬ì™€ êµì „í•  ìˆ˜ ìžˆë„ë¡ huntOrc()ë¥¼ ë§Œë“¤ì–´ë³´ê² ìŠµë‹ˆë‹¤.
+	// ¿ÀÅ©¿Í ±³ÀüÇÒ ¼ö ÀÖµµ·Ï huntOrc()¸¦ ¸¸µé¾îº¸°Ú½À´Ï´Ù.
 	public void huntOrc(Orc orc) {
-		// orcì˜ ì²´ë ¥ì„ ê²€ì‚¬í•´ì„œ 0 ì´í•˜ë¼ë©´ ê³µê²© ì—†ì´
-		// ì˜¤í¬ê°€ ì´ë¯¸ ì£½ì€ ìƒíƒœìž…ë‹ˆë‹¤. ë¼ëŠ” ë©˜íŠ¸ë§Œ ëœ¨ê³  
-		// ë©”ì„œë“œê°€ ì¢…ë£Œë˜ê²Œ í•´ì£¼ì„¸ìš”.
-		if(orc.getHp() <= 0) {// êµì „ ì „ì— ì´ë¯¸ ì£½ì€ ìƒíƒœ
-			System.out.println("ì˜¤í¬ê°€ ì´ë¯¸ ì£½ì€ ìƒíƒœìž…ë‹ˆë‹¤.");
+		// orcÀÇ Ã¼·ÂÀ» °Ë»çÇØ¼­ 0 ÀÌÇÏ¶ó¸é °ø°Ý ¾øÀÌ
+		// ¿ÀÅ©°¡ ÀÌ¹Ì Á×Àº »óÅÂÀÔ´Ï´Ù. ¶ó´Â ¸àÆ®¸¸ ¶ß°í 
+		// ¸Þ¼­µå°¡ Á¾·áµÇ°Ô ÇØÁÖ¼¼¿ä.
+		if(orc.getHp() <= 0) {// ±³Àü Àü¿¡ ÀÌ¹Ì Á×Àº »óÅÂ
+			System.out.println("¿ÀÅ©°¡ ÀÌ¹Ì Á×Àº »óÅÂÀÔ´Ï´Ù.");
 			return;
 		}
 		
-		// orcì˜ doBattleì„ í˜¸ì¶œí•´ ë¨¼ì € ì˜¤í¬ ì²´ë ¥ì„ ê¹Žê³ 
+		// orcÀÇ doBattleÀ» È£ÃâÇØ ¸ÕÀú ¿ÀÅ© Ã¼·ÂÀ» ±ð°í
 		orc.doBattle(this.atk);
 		
-		// ì˜¤í¬ê°€ ì „ì‚¬ì˜ ê³µê²©ìœ¼ë¡œ ì£½ì€ ê²½ìš° ê²½í—˜ì¹˜ë¥¼ 10 ë”í•´ì£¼ì‹œê³ 
-		// ì˜¤í¬ê°€ ì£½ì—ˆìŠµë‹ˆë‹¤. ë¼ëŠ” ë©˜íŠ¸ê°€ ëœ¨ê³  ë©”ì„œë“œê°€ ì¢…ë£Œë˜ê²Œ í•´ì£¼ì„¸ìš”.
-		if(orc.getHp() <= 0) {// êµì „ í›„ì— ì£½ì—ˆëŠ”ì§€ ì—¬ë¶€ ê²€ì‚¬
+		// ¿ÀÅ©°¡ Àü»çÀÇ °ø°ÝÀ¸·Î Á×Àº °æ¿ì °æÇèÄ¡¸¦ 10 ´õÇØÁÖ½Ã°í
+		// ¿ÀÅ©°¡ Á×¾ú½À´Ï´Ù. ¶ó´Â ¸àÆ®°¡ ¶ß°í ¸Þ¼­µå°¡ Á¾·áµÇ°Ô ÇØÁÖ¼¼¿ä.
+		if(orc.getHp() <= 0) {// ±³Àü ÈÄ¿¡ Á×¾ú´ÂÁö ¿©ºÎ °Ë»ç
 			this.exp += 10;
-			System.out.println("ì˜¤í¬ë¥¼ ì£½ì˜€ìŠµë‹ˆë‹¤. ê²½í—˜ì¹˜ê°€ 10 ì˜¬ëžìŠµë‹ˆë‹¤.");
-			System.out.println("ì „ì‚¬ì˜ ê²½í—˜ì¹˜ : " + this.exp);
+			System.out.println("¿ÀÅ©¸¦ Á×¿´½À´Ï´Ù. °æÇèÄ¡°¡ 10 ¿Ã¶ú½À´Ï´Ù.");
+			System.out.println("Àü»çÀÇ °æÇèÄ¡ : " + this.exp);
 		}else {
-			// ì˜¤í¬ ê³µê²©ë ¥ë§Œí¼ ìžì‹ ì˜ ì²´ë ¥ì„ ì°¨ê°í•´ì¤ë‹ˆë‹¤.
+			// ¿ÀÅ© °ø°Ý·Â¸¸Å­ ÀÚ½ÅÀÇ Ã¼·ÂÀ» Â÷°¨ÇØÁÝ´Ï´Ù.
 			this.hp -= orc.getAtk();			
 		}
 
-		System.out.println("ì „ì‚¬ì˜ ë‚¨ì€ ì²´ë ¥ : " + this.hp);
+		System.out.println("Àü»çÀÇ ³²Àº Ã¼·Â : " + this.hp);
 	}
 	
 	
 	
-	// íƒ€ ëª¬ìŠ¤í„°ìª½ì—ì„œ ì „ì‚¬ ìŠ¤íƒ¯ì„ ì¡°íšŒí•  ìˆ˜ ìžˆë„ë¡ Getter/Setterë¥¼ ë§Œë“¤ì–´ì£¼ì„¸ìš”.
+	// Å¸ ¸ó½ºÅÍÂÊ¿¡¼­ Àü»ç ½ºÅÈÀ» Á¶È¸ÇÒ ¼ö ÀÖµµ·Ï Getter/Setter¸¦ ¸¸µé¾îÁÖ¼¼¿ä.
 	public int getHp() {
 		return hp;
 	}
@@ -91,3 +91,4 @@ public class Warrior {
 
 	
 }
+

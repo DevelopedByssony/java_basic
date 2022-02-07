@@ -3,11 +3,11 @@ package game.interaction;
 public class Main01 {
 
 	public static void main(String[] args) {
-		// ì „ì‚¬ í•˜ë‚˜ì™€ ì˜¤í¬í•˜ë‚˜ë¥¼ ë§Œë“¤ì–´ì£¼ì„¸ìš”.
+		// Àü»ç ÇÏ³ª¿Í ¿ÀÅ©ÇÏ³ª¸¦ ¸¸µé¾îÁÖ¼¼¿ä.
 		Warrior w1 = new Warrior();
 		Orc o1 = new Orc();
 		
-		//êµì „ì„ ë‘ ë²ˆ ì‹œì¼œì£¼ì„¸ìš”.
+		//±³ÀüÀ» µÎ ¹ø ½ÃÄÑÁÖ¼¼¿ä.
 		w1.huntOrc(o1);
 		System.out.println("-------------------");
 		w1.huntOrc(o1);

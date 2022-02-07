@@ -9,7 +9,6 @@ public class Exit01P384 {
 		System.out.println("실행중 2");
 		System.out.println("실행중 3");
 		System.out.println("실행중 4");
-		/// :) exit을 만나면 강제 종료
 		// 0 : 정상종료(에러발생x), 0이외 : 비정상종료(에러발생o)
 		// System.exit(1); 
 		// System.exit(0);

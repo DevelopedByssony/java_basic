@@ -3,10 +3,10 @@ package superkeyword;
 public class Main02 {
 
 	public static void main(String[] args) {
-		// ì´ˆìŒì† ë¹„í–‰ê¸°ë¥¼ ë§Œë“¤ê² ìŠµë‹ˆë‹¤. ì´ˆê¸°ì†ë„ëŠ” 300ì…ë‹ˆë‹¤.
+		// ÃÊÀ½¼Ó ºñÇà±â¸¦ ¸¸µé°Ú½À´Ï´Ù. ÃÊ±â¼Óµµ´Â 300ÀÔ´Ï´Ù.
 		SupersonicAirplane s1 = 
 				new SupersonicAirplane(300);
-		// ë¹„í–‰ì„ 2ë²ˆ í•˜ê²Œ í•´ ë³´ì„¸ìš”.
+		// ºñÇàÀ» 2¹ø ÇÏ°Ô ÇØ º¸¼¼¿ä.
 		s1.fly();
 		s1.fly();
 	}

@@ -1,15 +1,15 @@
 package thiskeyword;
 
 public class Person {
-	// privateìœ¼ë¡œ ì‚¬ëŒ ì •ë³´ë¥¼ ë§Œë“¤ì–´ì£¼ì„¸ìš”
-	// ì´ë¦„, ë‚˜ì´, ëˆ, ì „ê³µ
+	// privateÀ¸·Î »ç¶÷ Á¤º¸¸¦ ¸¸µé¾îÁÖ¼¼¿ä
+	// ÀÌ¸§, ³ªÀÌ, µ·, Àü°ø
 	private String name;
 	private int age;
 	private int money;
 	private String major;
 	
-	// ìƒì„±ìë¥¼ ë§Œë“¤ì–´ì£¼ì„¸ìš”. 4ê°œ í•­ëª©ì„ ëª¨ë‘ ì…ë ¥ë°›ì•„ ëŒ€ì…í•´ì¤ë‹ˆë‹¤.
-	//                  ê¹€ì´ë°•      40        5000         ìˆ˜í•™
+	// »ı¼ºÀÚ¸¦ ¸¸µé¾îÁÖ¼¼¿ä. 4°³ Ç×¸ñÀ» ¸ğµÎ ÀÔ·Â¹Ş¾Æ ´ëÀÔÇØÁİ´Ï´Ù.
+	//                  ±èÀÌ¹Ú      40        5000         ¼öÇĞ
 	public Person(String name, int age, int money, String major) {
 		this.name = name;
 		this.age = age;
@@ -17,10 +17,10 @@ public class Person {
 		this.major = major;
 	}
 	
-	// ì´ë¦„ ë‚˜ì´ ì†Œì§€ê¸ˆì•¡ ì „ê³µì„ ì½˜ì†”ì— ì°ì–´ì£¼ëŠ” getInfo()ë¥¼ ì‘ì„±í•´ë³´ì„¸ìš”.
+	// ÀÌ¸§ ³ªÀÌ ¼ÒÁö±İ¾× Àü°øÀ» ÄÜ¼Ö¿¡ Âï¾îÁÖ´Â getInfo()¸¦ ÀÛ¼ºÇØº¸¼¼¿ä.
 	public void getInfo() {
-		System.out.println("ì´ë¦„ : " + this.name + ", ë‚˜ì´ : " + age 
-				+ ", ëˆ : " + this.money + ", ì „ê³µ : " + major);
+		System.out.println("ÀÌ¸§ : " + this.name + ", ³ªÀÌ : " + age 
+				+ ", µ· : " + this.money + ", Àü°ø : " + major);
 	}
 	
 }

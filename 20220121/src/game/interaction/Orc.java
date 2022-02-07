@@ -1,27 +1,27 @@
 package game.interaction;
 
 public class Orc {
-	// ì˜¤í¬ëŠ” hp, atk ì„ ê°€ì§‘ë‹ˆë‹¤.
+	// ¿ÀÅ©´Â hp, atk À» °¡Áı´Ï´Ù.
 	private int hp;
 	private int atk;
 	
-	// ìƒì„±ìëŠ” ì˜¤í¬ì—ê²Œ hpëŠ” 5, atkëŠ” 3ì„ ë¶€ì—¬í•©ë‹ˆë‹¤.
+	// »ı¼ºÀÚ´Â ¿ÀÅ©¿¡°Ô hp´Â 5, atk´Â 3À» ºÎ¿©ÇÕ´Ï´Ù.
 	public Orc() {
 		this.hp = 5;
 		this.atk = 3;
 	}
 	
-	// doBattle() ë©”ì„œë“œë¥¼ ë§Œë“¤ê² ìŠµë‹ˆë‹¤.
-	// ìœ ì €ì˜ ê³µê²©ë ¥(uAtk)ì„ ì…ë ¥ë°›ì•„ ì˜¤í¬ì˜ ì²´ë ¥ì„ ì°¨ê°í•©ë‹ˆë‹¤.
+	// doBattle() ¸Ş¼­µå¸¦ ¸¸µé°Ú½À´Ï´Ù.
+	// À¯ÀúÀÇ °ø°İ·Â(uAtk)À» ÀÔ·Â¹Ş¾Æ ¿ÀÅ©ÀÇ Ã¼·ÂÀ» Â÷°¨ÇÕ´Ï´Ù.
 	public void doBattle(int uAtk) {
 		this.hp -= uAtk;
-		System.out.println("ì˜¤í¬ì˜ ë‚¨ì€ ì²´ë ¥ : " + this.hp);
+		System.out.println("¿ÀÅ©ÀÇ ³²Àº Ã¼·Â : " + this.hp);
 	}
 	
 	
 	
 	
-	// getter/setterë„ ë§Œë“¤ì–´ì£¼ì„¸ìš”.
+	// getter/setterµµ ¸¸µé¾îÁÖ¼¼¿ä.
 	public int getHp() {
 		return hp;
 	}
