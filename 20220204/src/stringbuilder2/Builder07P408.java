@@ -3,19 +3,19 @@ package stringbuilder2;
 public class Builder07P408 {
 
 	public static void main(String[] args) {
-		// toString()ì€ ë‚´ë¶€ ìë£Œë¥¼ Stringìœ¼ë¡œ ë°”ê¿”ì¤ë‹ˆë‹¤.
-		// StringBuilder ìë£Œí˜•ì€ Stringì²˜ëŸ¼ ë³´ì´ì§€ë§Œ
-		// ì—„ë°€íˆ ë§í•˜ë©´ Stringì´ ì•„ë‹ˆê¸° ë•Œë¬¸ì—
-		// ë‹¤ì‹œ í˜• ë³€í™˜ì„ í•´ì¤˜ì•¼ í•©ë‹ˆë‹¤.
-		StringBuilder str = new StringBuilder("ê°€ë‚˜ë‹¤ë¼ë§ˆë°”ì‚¬");
-		// ìë£Œí˜• ë¶ˆì¼ì¹˜
+		// toString()Àº ³»ºÎ ÀÚ·á¸¦ StringÀ¸·Î ¹Ù²ãÁİ´Ï´Ù.
+		// StringBuilder ÀÚ·áÇüÀº StringÃ³·³ º¸ÀÌÁö¸¸
+		// ¾ö¹ĞÈ÷ ¸»ÇÏ¸é StringÀÌ ¾Æ´Ï±â ¶§¹®¿¡
+		// ´Ù½Ã Çü º¯È¯À» ÇØÁà¾ß ÇÕ´Ï´Ù.
+		StringBuilder str = new StringBuilder("°¡³ª´Ù¶ó¸¶¹Ù»ç");
+		// ÀÚ·áÇü ºÒÀÏÄ¡
 		// String hangul = (String)str; /* x */
-		// Stringìœ¼ë¡œ êµí™˜í• ë•ŒëŠ” str.toString()ì„ ë¶™ì—¬ì„œ ìë£Œë³€í™˜ì„ í•©ë‹ˆë‹¤.
+		// StringÀ¸·Î ±³È¯ÇÒ¶§´Â str.toString()À» ºÙ¿©¼­ ÀÚ·áº¯È¯À» ÇÕ´Ï´Ù.
 		String hangul = str.toString();
 		System.out.println(hangul);
 		
-		// Stringìë£Œí˜•ì¸ hangulì„ ë‹¤ì‹œ StringBuilderí˜•ìœ¼ë¡œ ë°”ê¿”ì„œ
-		// StringBuilder str2ì— ì €ì¥í•´ì£¼ì„¸ìš”.
+		// StringÀÚ·áÇüÀÎ hangulÀ» ´Ù½Ã StringBuilderÇüÀ¸·Î ¹Ù²ã¼­
+		// StringBuilder str2¿¡ ÀúÀåÇØÁÖ¼¼¿ä.
 		StringBuilder str2 = new StringBuilder(hangul);
 		System.out.println(str2);
 	}

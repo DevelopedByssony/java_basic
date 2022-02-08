@@ -3,10 +3,10 @@ package stringbuilder2;
 public class Builder08P408 {
 
 	public static void main(String[] args) {
-		// reverse()ëŠ” ë¬¸ìì—´ì„ ì¸ë±ìŠ¤ ìˆœìœ¼ë¡œ ë”°ì¡Œì„ë•Œ
-		// ì—­ìˆœìœ¼ë¡œ ë‚˜ì—´í•´ì¤ë‹ˆë‹¤.
-		StringBuilder str = new StringBuilder("ê°€ë¼ë‚˜ë§ˆë‹¤"); /* ì¸ë±ìŠ¤ ë²ˆí˜¸ ìˆœì°¨ì ìœ¼ë¡œ 01234 */
+		// reverse()´Â ¹®ÀÚ¿­À» ÀÎµ¦½º ¼øÀ¸·Î µûÁ³À»¶§
+		// ¿ª¼øÀ¸·Î ³ª¿­ÇØÁİ´Ï´Ù.
+		StringBuilder str = new StringBuilder("°¡¶ó³ª¸¶´Ù"); /* ÀÎµ¦½º ¹øÈ£ ¼øÂ÷ÀûÀ¸·Î 01234 */
 		str.reverse();
-		System.out.println(str); /* ì¸ë±ìŠ¤ ë²ˆí˜¸ ì—­ìˆœ 43210 */
+		System.out.println(str); /* ÀÎµ¦½º ¹øÈ£ ¿ª¼ø 43210 */
 	}
 }
